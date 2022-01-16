@@ -60,6 +60,8 @@ html {
 
 body {
   font-family: 'Circular Std', sans-serif;
+  /* font-family: 'Poppins', sans-serif; */
+
   line-height: 1;
   font-weight: 400;
   color: #555;
@@ -74,6 +76,12 @@ body {
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .grid {
   display: grid;
   column-gap: 6.4rem;
@@ -82,6 +90,10 @@ body {
 
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
@@ -144,10 +156,16 @@ body {
   border-radius: 8px;
 }
 
-.btn--full:link,
+/* .btn--full:link,
 .btn--full:visited {
   background-color: #f87620;
   color: #fff;
+} */
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #fb9500;
+  color: #352f2f;
 }
 
 .btn--full:hover,
