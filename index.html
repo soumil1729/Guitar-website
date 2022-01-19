@@ -4,21 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <script type="module" defer src="./scripts/slider.js"></script>
+    <script defer src="./scripts/lazyLoading.js"></script>
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="logo-container">
-        <img class="logo" src="./image/logo.png" alt="logo" />
-        Guitarzilla
+        <a href="#">
+          <img class="logo" src="./image/logo.png" alt="logo" />Guitarzilla
+        </a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li><a href="#" class="main-nav-link">Section 1</a></li>
           <li><a href="#c" class="main-nav-link">Section 2</a></li>
-          <li><a href="#" class="main-nav-link">Section 3</a></li>
+          <li><a href="#go-testimonial" class="main-nav-link">Section 3</a></li>
           <li><a href="#" class="main-nav-link">Section 4</a></li>
           <li>
             <a href="#" class="main-nav-link nav-cta btn btn--full"
@@ -41,14 +45,6 @@
             </p>
             <a href="#" class="btn btn--full margin-right-sm">Learn to play</a>
             <a href="#" class="btn btn--full btn--outline">Discover more</a>
-            <div>
-              <img class="hero-fun-svg png-square" src="./square.png" alt="" />
-              <img
-                class="hero-fun-svg png-diamond"
-                src="./diamond.png"
-                alt=""
-              />
-            </div>
 
             <div class="countries-student">
               <div class="countries-imgs">
@@ -88,26 +84,75 @@
           </div>
         </div>
       </section>
-      <section class="section-featured">
+
+      <!-- section features -->
+      <section class="section section-features">
         <div class="container">
-          <h2 class="featured-in-heading">Featured in</h2>
-          <div class="logos">
-            <img
-              src="./image/Featured IN/HIDUSTANTimes.svg"
-              alt="HIDUSTANTimes"
-            />
-            <img src="./image/Featured IN/BBC.svg" alt="HIDUSTANTimes" />
-            <img
-              src="./image/Featured IN/indipendent.svg"
-              alt="indipendent times"
-            />
-            <img src="./image/Featured IN/Telegraph.svg" alt="HIDUSTANTimes" />
-            <img src="./image/Featured IN/daily mail logo.svg" alt="" />
+          <div class="feature-box grid--4-cols">
+            <!-- features -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./image/Feature img/musical-note-music-svgrepo-com.svg"
+                alt=""
+              />
+              <div>
+                <h3 class="feature-heading">Chords</h3>
+                <p class="feature-text">
+                  A chord progression is a series of chords played in a
+                  sequence.
+                </p>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./image/Feature img/stack-layered.svg"
+                alt=""
+              />
+              <div>
+                <h3 class="feature-heading">Technique</h3>
+                <p class="feature-text">
+                  Learn Pick holding,Finger picking, Hammer-ons, Pull-offs,
+                  Bends, Slides, Vibrato.
+                </p>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./image/Feature img/page-svgrepo-com.svg"
+                alt=""
+              />
+              <div>
+                <h3 class="feature-heading">Theory</h3>
+                <p class="feature-text">
+                  Learn Guitar theroy Major, Minor, Augmented etc.
+                </p>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="feature">
+              <img
+                class="feature-img"
+                src="./image/Feature img//microphone-svgrepo-com.svg"
+                alt=""
+              />
+              <div>
+                <h3 class="feature-heading">Solo</h3>
+                <p class="feature-text">
+                  Learn to play Solo,or in team.Give performance in stage
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="section-roadmap">
+      <!-- 2️⃣ roadmap section -->
+      <section class="section section-roadmap">
         <div class="container">
           <span class="subheading">Roadmap</span>
           <h2 class="heading-secondary">The best way to learn guitar</h2>
@@ -185,8 +230,8 @@
         </div>
       </section>
 
-      <!-- features section -->
-      <section class="section-classes">
+      <!-- 2️⃣ features section -->
+      <section class="section section-classes">
         <div id="c" class="container center-text">
           <span class="subheading">What We Offer</span>
           <h2 class="heading-secondary">All Level Classes Guitar Lessons</h2>
@@ -348,67 +393,35 @@
         </div>
       </section>
 
-      <!-- section testimonial -->
-      <section class="section-testimonials">
+      <!-- 3️⃣ section testimonial -->
+      <section class="section section-testimonials">
         <div class="container center-text">
           <span class="subheading">Testimonials</span>
           <h2 class="heading-secondary">Why Choose Us</h2>
         </div>
 
         <div class="container">
-          <div class="slide">
-            <div class="testimonials">
-              <div class="testimonial-quote-wrapper">
-                <div class="testimonial-quote">
-                  <img
-                    class="testimonial-img"
-                    src="./image/Testimonials/testimonial-quote.svg"
-                    alt=""
-                  />
-                </div>
-              </div>
+          <div class="slide"></div>
 
-              <div class="testimonial-text-box">
-                <!-- <div> -->
-                <h5 class="testimonial-header">
-                  Finally free from old-school banks
-                </h5>
-                <blockquote class="testimonial--text">
-                  Kids can learn in a calm and friendly atmosphere in individual
-                  classes not only that the teacher are so fiendly with the kids
-                  my daughter is throughly Enjoying with you.
-                </blockquote>
-                <!-- </div> -->
-                <address class="testimonial-author">
-                  <img
-                    class="testimonial-photo"
-                    src="./image/users/user-1.jpg"
-                    alt=""
-                  />
-                  <h6 class="testimonial-name">Aarav Lynn</h6>
-                  <p class="testimonial-location">San Francisco, USA</p>
-                </address>
-              </div>
-            </div>
-            <div class="btn-slider">
-              <button class="btn-left">
-                <ion-icon
-                  class="btn-slider--img"
-                  name="chevron-back-outline"
-                ></ion-icon>
-              </button>
-              <button class="btn-right">
-                <ion-icon
-                  class="btn-slider--img"
-                  name="chevron-forward-outline"
-                ></ion-icon>
-              </button>
-            </div>
+          <div class="btn-slider">
+            <button class="btn-left">
+              <ion-icon
+                class="btn-slider--img"
+                name="chevron-back-outline"
+              ></ion-icon>
+            </button>
+            <button class="btn-right">
+              <ion-icon
+                class="btn-slider--img"
+                name="chevron-forward-outline"
+              ></ion-icon>
+            </button>
           </div>
         </div>
       </section>
 
-      <section class="section-price">
+      <!-- 4️⃣ pricing section -->
+      <section class="section section-price">
         <div class="container">
           <span class="subheading">Pricing</span>
           <h2 class="heading-secondary">
@@ -416,7 +429,7 @@
           </h2>
         </div>
 
-        <div class="container flex">
+        <div class="container flex margin-bottom-hc">
           <!-- 1 -->
           <div class="pricing-plan pricing-plan--starter">
             <header class="plan-header">
@@ -593,74 +606,166 @@
             </div>
           </div>
         </div>
+
+        <div class="container grid">
+          <aside class="plan-details">
+            Prices include all applicable taxes. Users can cancel at any time.
+          </aside>
+        </div>
       </section>
-      <!-- --last❌ ---->
-      <section class="section-features">
+
+      <!-- 5️⃣ section featured -->
+      <section class="section section-featured">
         <div class="container">
-          <div class="feature-box grid--4-cols">
-            <!-- features -->
-            <div class="feature">
-              <img
-                class="feature-img"
-                src="./image/Feature img/musical-note-music-svgrepo-com.svg"
-                alt=""
-              />
-              <div>
-                <h3 class="feature-heading">Chords</h3>
-                <p class="feature-text">
-                  A chord progression is a series of chords played in a
-                  sequence.
-                </p>
-              </div>
-            </div>
-            <!-- 2 -->
-            <div class="feature">
-              <img
-                class="feature-img"
-                src="./image/Feature img/stack-layered.svg"
-                alt=""
-              />
-              <div>
-                <h3 class="feature-heading">Technique</h3>
-                <p class="feature-text">
-                  Learn Pick holding,Finger picking, Hammer-ons, Pull-offs,
-                  Bends, Slides, Vibrato.
-                </p>
-              </div>
-            </div>
-            <!-- 3 -->
-            <div class="feature">
-              <img
-                class="feature-img"
-                src="./image/Feature img/page-svgrepo-com.svg"
-                alt=""
-              />
-              <div>
-                <h3 class="feature-heading">Theory</h3>
-                <p class="feature-text">
-                  Learn Guitar theroy Major, Minor, Augmented etc.
-                </p>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div class="feature">
-              <img
-                class="feature-img"
-                src="./image/Feature img//microphone-svgrepo-com.svg"
-                alt=""
-              />
-              <div>
-                <h3 class="feature-heading">Solo</h3>
-                <p class="feature-text">
-                  Learn to play Solo,or in team.Give performance in stage
-                </p>
-              </div>
-            </div>
+          <h2 class="featured-in-heading">Featured in</h2>
+          <div class="logos">
+            <img
+              src="./image/Featured IN/HIDUSTANTimes.svg"
+              alt="HIDUSTANTimes"
+            />
+            <img src="./image/Featured IN/BBC.svg" alt="HIDUSTANTimes" />
+            <img
+              src="./image/Featured IN/indipendent.svg"
+              alt="indipendent times"
+            />
+            <img src="./image/Featured IN/Telegraph.svg" alt="HIDUSTANTimes" />
+            <img src="./image/Featured IN/daily mail logo.svg" alt="" />
           </div>
         </div>
       </section>
+
+      <!-- 6️⃣ call to action section -->
+      <section class="section section-cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Schedule a Free Trial</h2>
+              <p class="cta-text">
+                Let's start your class and become the Pro. Life is one grand,
+                sweet song, so start the music.
+              </p>
+
+              <form class="form-cta">
+                <div>
+                  <label for="full-name">Full name</label>
+                  <input
+                    type="text"
+                    placeholder="soumil saitra"
+                    id="full-name"
+                  />
+                </div>
+
+                <div>
+                  <label for="email">email</label>
+                  <input
+                    type="email"
+                    placeholder="soumilsaitra@gmail.com"
+                    id="email"
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you here from us</label>
+                  <select id="select-where">
+                    <option value="">---Please choose an option---</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="digital ad">Facebook</option>
+                    <option value="podcast">Podcast</option>
+                  </select>
+                </div>
+                <button class="btn btn-form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- --last❌ ---->
     </main>
 
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-cal">
+          <a class="logo-home" href="#">
+            <img class="logo" src="./image/logo.png" alt="logo" />
+            Guitarzilla
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright &copy; 2022 by Gitrarzilla, Inc. All rights reserved
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <a class="footer-link" href="tel:415-201-6370">415-201-6370</a
+            ><br />
+            <a class="footer-link" href="mailto:hello@omnifood.com"
+              >hello@omnifood.com</a
+            >
+          </address>
+        </div>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li>
+              <a class="footer-link" href="#">About Guitarzilla</a>
+            </li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>
 </html>

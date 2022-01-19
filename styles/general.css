@@ -46,6 +46,7 @@ medium:11px
  */
 
 @import url('http://fonts.cdnfonts.com/css/circular-std');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -60,7 +61,7 @@ html {
 
 body {
   font-family: 'Circular Std', sans-serif;
-  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'Open Sans', sans-serif; */
 
   line-height: 1;
   font-weight: 400;
@@ -100,8 +101,23 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-center-v {
   align-items: center;
+}
+
+/* fading animation */
+
+.section {
+  transition: transform 1000ms, opacity 1000ms;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(12rem);
 }
 
 /* headings */
@@ -112,10 +128,11 @@ body {
   letter-spacing: -0.5px;
 }
 .heading-primary {
+  font-family: 'Spicy Rice', cursive;
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .heading-secondary {
@@ -145,6 +162,7 @@ body {
 }
 
 /* btn  */
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -154,6 +172,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-radius: 8px;
+  border: none;
 }
 
 /* .btn--full:link,
@@ -190,6 +209,22 @@ body {
   box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
+.btn-form {
+  background-color: #4b2d00;
+  color: var(--primary-background-color);
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn-form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-hc {
+  margin-bottom: 4.8rem !important;
 }
