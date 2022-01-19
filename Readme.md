@@ -1,5 +1,5 @@
-Startup/Upbeat: Widely used in startups, featuring medium-sized sans-serif typefaces, light-grey text and backgrounds, and rounded elements
 
+<<<<<<< HEAD
 <!--
 1 When choosing font-sizes, limit choices! Use a
 “type scale” tool or other pre-defined range
@@ -49,3 +49,5 @@ Trusted by over 25,391 students from over 35 countries around the world
 Testimonials
 Kids can learn in a calm and friendly atmosphere in individual classes not only that the teacher are so fiendly with the kids my daughter is throughly Enjoying with you.
 Meeankshi sharma
+=======
+>>>>>>> 66530cce366fda7b76ee37298b11f3b6d9112414
