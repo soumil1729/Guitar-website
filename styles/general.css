@@ -45,7 +45,7 @@ medium:11px
 
  */
 
-@import url('http://fonts.cdnfonts.com/css/circular-std');
+/* @import url('http://fonts.cdnfonts.com/css/circular-std'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 
 * {
@@ -61,7 +61,7 @@ html {
 
 body {
   font-family: 'Circular Std', sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
+  font-family: 'Open Sans', sans-serif;
 
   line-height: 1;
   font-weight: 400;
@@ -112,7 +112,7 @@ body {
 /* fading animation */
 
 .section {
-  transition: transform 1000ms, opacity 1000ms;
+  transition: transform 1000ms ease, opacity 1000ms ease;
 }
 
 .section--hidden {
@@ -152,6 +152,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   color: #f87620;
+  color: #e03131;
   text-transform: uppercase;
   margin-bottom: 3.2rem;
   letter-spacing: 0.75px;

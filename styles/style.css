@@ -228,7 +228,7 @@
 }
 
 .roadmap-stepheading {
-  font-size: 4.8rem;
+  font-size: 4.4rem;
   font-weight: 600;
   color: #ddd;
   margin-bottom: 1.2rem;
@@ -242,34 +242,25 @@
 .roadmap-img-box {
   display: flex;
   align-items: center;
-  /* justify-content: end; */
   position: relative;
 }
 
 .roadmap-img {
-  width: 90%;
+  width: 75%;
   border-radius: 8px;
 }
 
-.roadmap-img-box::before,
 .roadmap-img-box::after {
   content: '';
   position: absolute;
   display: block;
   top: 50%;
-  left: 44%;
-  transform: translate(-50%, -50%) rotate(43deg);
+  left: 50%;
+  transform: translate(-58%, -42%);
   border-radius: 8px;
-}
-.roadmap-img-box::before {
-  padding: 30%;
-  background-color: #fff4ed;
-  z-index: -2;
-}
-
-.roadmap-img-box::after {
-  padding: 25%;
-  background-color: #ffd3b8;
+  width: 75%;
+  padding-bottom: 75%;
+  background-color: #ffe066;
   z-index: -1;
 }
 
@@ -278,8 +269,11 @@
 /* ******************************* */
 .section-classes {
   padding: 9.6rem 0;
-  background-image: url(../image/section-baground-img.png);
+  background-image: url(../image/circles.png),
+    url(../image/section-baground-img.png);
   background-position: center;
+  background-size: 50%, auto;
+  background-repeat: no-repeat;
 }
 
 .grid-classes {
@@ -519,6 +513,7 @@
     rgb(255, 244, 237, 0.9),
     rgb(222, 93, 6, 0.5)
   );
+
   position: relative;
   overflow: hidden;
 }
@@ -632,11 +627,14 @@
   display: grid;
   align-items: center;
   justify-content: center;
+
   background: linear-gradient(
     to bottom,
-    rgb(255, 244, 237, 0.5),
-    rgb(222, 93, 6, 0.4)
+    rgb(240, 152, 25, 0.7),
+    rgb(239, 207, 79, 1)
   );
+
+  background-color: rgb(239, 207, 79);
   border-radius: 8px;
   padding: 0.4rem 0.8rem;
 }
@@ -680,6 +678,11 @@
     to left bottom,
     rgb(255, 244, 237, 1),
     rgb(222, 93, 6, 0.9)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 152, 25, 0.7),
+    rgb(239, 207, 79, 1)
   );
   border-radius: 9px;
   overflow: hidden;
@@ -816,4 +819,38 @@
 .footer-link:hover,
 .footer-link:active {
   color: #555;
+}
+
+/* ******************************* */
+/*  SECTON COUNTER*/
+/* ******************************* */
+
+.section-counters {
+  margin: 9.6rem 0 8rem 0;
+  background-color: #efcf4f;
+}
+
+.section-counters .container {
+  padding: 7.4rem 0;
+}
+.counter {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 7rem;
+  text-shadow: 6px 6px 0px rgb(0 0 0 / 5%);
+  margin-bottom: 0.8rem;
+}
+
+.counter-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #0c4b65;
+}
+
+.counter-sub-heading {
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #c25934;
 }
