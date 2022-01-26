@@ -19,10 +19,16 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--primary-background-color);
+  background: radial-gradient(
+    circle at 8% 20%,
+    rgba(243, 255, 200, 0) 0%,
+    rgba(255, 231, 216, 1) 100%
+  );
+  position: relative;
 }
 
 .logo {
-  height: 4rem;
+  height: 6rem;
   margin-right: 3px;
 }
 
@@ -45,7 +51,7 @@
 
 .main-nav-list {
   display: flex;
-  gap: 3.2rem;
+  gap: 4.8rem;
   list-style: none;
   align-items: center;
 }
@@ -73,6 +79,23 @@
 .main-nav-link.nav-cta:active {
   background-color: #de5d06;
 }
+
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
 /* ******************************* */
 /* HERO SECTION*/
 /* ******************************* */
@@ -80,10 +103,11 @@
 .section-hero {
   padding: 4.8rem 0 9.8rem 0;
   background-color: var(--primary-background-color);
-
-  /* background-image: url(../image/section-baground-img.png);
-  background-position: right;
-  background-size: cover; */
+  background: radial-gradient(
+    circle at 8% 20%,
+    rgba(243, 255, 200, 0) 0%,
+    rgba(255, 231, 216, 1) 100%
+  );
   position: relative;
 }
 
@@ -93,7 +117,6 @@
   padding: 0 3.2rem;
   display: grid;
   grid-template-columns: 55fr 45fr;
-  /* gap: 3.2rem; */
   align-items: center;
 }
 
@@ -107,7 +130,6 @@
 }
 
 .hero-description {
-  width: 80%;
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.2rem;
@@ -120,19 +142,8 @@
 }
 
 .hero-img {
-  position: relative;
   width: 100%;
   z-index: 20;
-  filter: drop-shadow(0 0 5px rgba(251, 149, 0, 0.5));
-}
-
-.svg {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  z-index: 1;
-  transform: rotateX(-180deg);
 }
 
 .svg-diamond {
@@ -142,23 +153,13 @@
   left: -20px;
 }
 
-.png-square {
-  top: -100px;
-  transform: rotate(68deg);
-  right: -50px;
-}
-.png-diamond {
-  top: -90px;
-  transform: rotate(78deg);
-  left: 10px;
-}
-
 /* ---COUNTRIES SVGS---- */
 .countries-student {
   display: flex;
   margin-top: 8rem;
   gap: 1rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .countries-img {
@@ -182,6 +183,56 @@
 .countries-students-text span {
   font-weight: 700;
   color: #de5d06;
+}
+
+/* ******************************* */
+/* FEATURES SECTION*/
+/* ******************************* */
+.section-features {
+  /* padding: 1.8rem 0 3.2rem 0; */
+  padding: 3.2rem 0;
+  /* display: none; */
+}
+
+.feature-box {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    rgb(240, 152, 25, 0.7),
+    rgb(239, 207, 79, 1)
+  );
+
+  background-color: rgb(239, 207, 79);
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+}
+
+.feature {
+  display: flex;
+  padding: 2rem;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-img {
+  height: 4.8rem;
+  opacity: 0.9;
+  align-self: center;
+}
+
+.feature-heading {
+  color: #555;
+  font-size: 2.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.feature-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #666;
 }
 
 /* ******************************* */
@@ -228,10 +279,10 @@
 }
 
 .roadmap-stepheading {
-  font-size: 4.4rem;
+  font-size: 3rem;
   font-weight: 600;
   color: #ddd;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .roadmap-description {
@@ -245,6 +296,13 @@
   position: relative;
 }
 
+.roadmap-img-box:nth-child(2) {
+  justify-content: center;
+}
+
+.roadmap-img-box:nth-child(6) {
+  justify-content: center;
+}
 .roadmap-img {
   width: 75%;
   border-radius: 8px;
@@ -412,6 +470,7 @@
 
 .testimonial--text {
   font-size: 2.4rem;
+  line-height: 1.5;
   font-weight: 400;
   color: #666;
 }
@@ -494,20 +553,20 @@
 .pricing-plan {
   text-align: center;
   box-shadow: 0 7px 30px rgba(52, 31, 67, 0.1);
-  width: 95%;
+  width: 100%;
   border-radius: 8px;
   padding: 3.2rem;
 }
 
 .pricing-plan--starter {
   transform: scale(0.9);
-  margin-right: -20px;
+  margin-right: -2rem;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
 .pricing-plan--popular {
-  box-shadow: 0 7px 30px rgba(52, 31, 67, 0.2);
+  box-shadow: 0 7px 30px rgba(52, 31, 67, 0.25);
   background: linear-gradient(
     to top,
     rgb(255, 244, 237, 0.9),
@@ -522,11 +581,11 @@
   position: absolute;
   content: 'popular';
   text-transform: uppercase;
-  top: 28px;
-  right: -72px;
+  top: 22px;
+  right: -68px;
   background-color: #ffe066;
   color: #333;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 0.8rem 8rem;
   font-weight: 800;
   font-family: 'Poppins', sans-serif;
@@ -535,7 +594,7 @@
 
 .pricing-plan--pro {
   transform: scale(0.9);
-  margin-left: -20px;
+  margin-left: -2rem;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -615,55 +674,6 @@
 }
 
 /* ******************************* */
-/* FEATURES SECTION*/
-/* ******************************* */
-.section-features {
-  /* padding: 1.8rem 0 3.2rem 0; */
-  padding: 3.2rem 0;
-  /* display: none; */
-}
-
-.feature-box {
-  display: grid;
-  align-items: center;
-  justify-content: center;
-
-  background: linear-gradient(
-    to bottom,
-    rgb(240, 152, 25, 0.7),
-    rgb(239, 207, 79, 1)
-  );
-
-  background-color: rgb(239, 207, 79);
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
-}
-
-.feature {
-  display: flex;
-  padding: 2rem;
-  gap: 1.2rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-img {
-  height: 4.8rem;
-  opacity: 0.9;
-  align-self: center;
-}
-
-.feature-heading {
-  color: #555;
-  font-size: 2.8rem;
-  margin-bottom: 0.8rem;
-}
-.feature-text {
-  font-size: 1.4rem;
-  color: #666;
-}
-
-/* ******************************* */
 /* SECTION CTA*/
 /* ******************************* */
 
@@ -700,7 +710,7 @@
 
 .cta-text {
   font-size: 1.8rem;
-  line-height: 1.8rem;
+  line-height: 1.8;
   margin-bottom: 4.8rem;
 }
 
@@ -725,7 +735,7 @@
 .form-cta label {
   display: block;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-bottom: 1.2rem;
 }
 
@@ -780,7 +790,7 @@
 
 .copyright {
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 2;
   color: #767676;
   margin-top: auto;
 }
@@ -801,7 +811,7 @@
 .contacts {
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 2rem;
+  line-height: 2;
 }
 
 .address {
@@ -834,7 +844,6 @@
   padding: 7.4rem 0;
 }
 .counter {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   color: #fff;
   font-size: 7rem;
@@ -850,6 +859,7 @@
 
 .counter-sub-heading {
   font-size: 2.4rem;
+  line-height: 1.5;
   font-weight: 600;
   text-transform: lowercase;
   color: #c25934;

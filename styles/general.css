@@ -57,6 +57,7 @@ medium:11px
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -64,8 +65,9 @@ body {
   font-family: 'Open Sans', sans-serif;
 
   line-height: 1;
-  font-weight: 400;
+  font-weight: 500;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* ******************************* */
@@ -127,6 +129,7 @@ body {
   color: #333;
   letter-spacing: -0.5px;
 }
+
 .heading-primary {
   font-family: 'Spicy Rice', cursive;
   font-size: 5.2rem;
@@ -137,13 +140,13 @@ body {
 
 .heading-secondary {
   font-size: 4.4rem;
-  /* line-height: 1.2rem; */
+  line-height: 1.2;
   margin-bottom: 9.6rem;
 }
 
 .heading-tertiory {
   font-size: 3rem;
-  /* line-height: 1.2rem; */
+  line-height: 1.2;
   margin-bottom: 3.2rem;
 }
 
