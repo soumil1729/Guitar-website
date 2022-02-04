@@ -46,12 +46,20 @@ medium:11px
  */
 
 /* @import url('http://fonts.cdnfonts.com/css/circular-std'); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
+  --primary-background-color: #fff4ed;
+  --btn-color: #fa6559;
+  --primary-heading-color: #0c4b65;
+  --secondary-heading-color: #c25934;
+  --primary-font: 'Open Sans', sans-serif;
 }
 
 html {
@@ -61,8 +69,7 @@ html {
 }
 
 body {
-  font-family: 'Circular Std', sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--primary-font);
 
   line-height: 1;
   font-weight: 500;
@@ -112,7 +119,6 @@ body {
 }
 
 /* fading animation */
-
 .section {
   transition: transform 1000ms ease, opacity 1000ms ease;
 }
@@ -131,20 +137,22 @@ body {
 }
 
 .heading-primary {
-  font-family: 'Spicy Rice', cursive;
+  font-family: var(--primary-font);
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
-  font-weight: 300;
+  font-weight: 800;
 }
 
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
+  color: var(--primary-heading-color);
   margin-bottom: 9.6rem;
 }
 
 .heading-tertiory {
+  color: var(--primary-heading-color);
   font-size: 3rem;
   line-height: 1.2;
   margin-bottom: 3.2rem;
@@ -177,23 +185,18 @@ body {
   text-decoration: none;
   border-radius: 8px;
   border: none;
+  transition: background-color 250ms;
 }
-
-/* .btn--full:link,
-.btn--full:visited {
-  background-color: #f87620;
-  color: #fff;
-} */
 
 .btn--full:link,
 .btn--full:visited {
-  background-color: #fb9500;
-  color: #352f2f;
+  background-color: var(--btn-color);
+  color: #fff;
 }
 
 .btn--full:hover,
 .btn--full:active {
-  background-color: #de5d06;
+  background-color: #c85147;
 }
 
 .btn--outline:link,
@@ -214,17 +217,21 @@ body {
 }
 
 .btn-form {
-  background-color: #4b2d00;
+  background-color: #f14141;
   color: var(--primary-background-color);
   align-self: end;
   padding: 1.2rem;
 }
 
 .btn-form:hover {
-  background-color: #fff;
-  color: #555;
+  background-color: #d93b3b;
 }
 
+.lazy-img {
+  filter: blur(3px);
+}
+
+/* helpers */
 .margin-right-sm {
   margin-right: 1.6rem !important;
 }

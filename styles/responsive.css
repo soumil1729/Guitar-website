@@ -202,7 +202,7 @@
 
   /* TESTIMONIALS */
   .slide {
-    height: 600px;
+    height: 550px;
   }
 
   .testimonials {
@@ -232,7 +232,6 @@
   }
 
   .testimonial-author {
-    width: 36%;
     margin-top: 3.2rem;
     font-size: 1.8rem;
   }
@@ -263,7 +262,7 @@
   }
 
   .classes-image-box {
-    margin: 2.4rem 0 2.4rem 0;
+    margin: 2rem 0 2rem 0;
   }
 
   .class-guitar-image {
@@ -278,15 +277,29 @@
     flex-direction: row-reverse;
   }
 
-
-  .class-heading,.class-description {
+  .class-heading,
+  .class-description {
     text-align: left;
-}
+  }
 
+  /* footer */
+  .grid--footer {
+    grid-template-columns: 1.5fr 1.5fr;
+    align-items: flex-start;
+    justify-content: center;
+  }
+}
 /**************************/
 /* Below 704px (Smaller-Tablets) */
 /**************************/
 @media (max-width: 44em) {
+  .roadmap-stepheading {
+    font-size: 2.4rem;
+  }
+
+  .section-roadmap .heading-tertiory {
+    margin-bottom: 1.6rem;
+  }
 }
 
 /**************************/
@@ -304,12 +317,16 @@
     row-gap: 4.8rem;
   }
 
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
   .hero {
     padding: 0 3.2rem;
   }
 
-  .section-hero {
-    padding: 2.4rem 0 6.4rem 0;
+  .hero-description {
+    width: 100%;
   }
 
   .btn,
@@ -376,8 +393,51 @@
     height: 1.1rem;
   }
 
+  /* guitar image */
+  .class-guitar-image {
+    width: 60%;
+  }
+
   /* counter */
   .section-counters .grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-quote {
+    width: 35rem;
+    height: 35rem;
+  }
+
+  .testimonial-text-box {
+    margin-top: -17.8rem;
+  }
+
+  .testimonial--text {
+    font-size: 2rem;
+  }
+
+  .btn-left,
+  .btn-right {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  /* footer */
+  .nav-col:nth-child(4) {
+    grid-row: 1;
+    grid-column: 2/3;
   }
 }

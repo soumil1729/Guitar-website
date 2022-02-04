@@ -25,7 +25,7 @@ const increamentCounter = function () {
 const startInreamentCounter = function (entries) {
   const [entrie] = entries;
   if (entrie.isIntersecting) {
-    console.log(entries);
+    // console.log(entries);
     increamentCounter();
     counterObserver.unobserve(entrie.target);
   }

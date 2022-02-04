@@ -80,6 +80,8 @@ const slider = function () {
 
   btnLeft.addEventListener('click', prevSlide);
   btnRight.addEventListener('click', nextSlide);
+
+  setInterval(nextSlide, 3000);
 };
 
 if (testimonials.length) slider();
