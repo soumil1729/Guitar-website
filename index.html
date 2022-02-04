@@ -688,11 +688,12 @@
                 sweet song, so start the music.
               </p>
 
-              <form class="form-cta">
+              <form class="form-cta" name="sign-up" netlify>
                 <div>
                   <label for="full-name">Full name</label>
                   <input
                     type="text"
+                    name="full-name"
                     placeholder="Harry potter"
                     id="full-name"
                   />
@@ -700,12 +701,14 @@
 
                 <div>
                   <label for="email">email</label>
-                  <input type="email" placeholder="abc@gmail.com" id="email" />
+                  <input type="email" 
+                  name="email"
+                  placeholder="abc@gmail.com" id="email" />
                 </div>
 
                 <div>
                   <label for="select-where">Where did you here from us</label>
-                  <select id="select-where">
+                  <select id="select-where" name="options">
                     <option value="">---Please choose an option---</option>
                     <option value="friends">Friends and family</option>
                     <option value="youtube">Youtube</option>
